@@ -1,0 +1,21 @@
+{
+  "editor.quickSuggestions": {
+    "other": "off",
+    "comments": "off",
+    "strings": "off"
+  },
+  "editor.suggestOnTriggerCharacters": false,
+  "editor.wordBasedSuggestions": "off",
+  "editor.inlineSuggest.enabled": false,
+  "editor.acceptSuggestionOnEnter": "off",
+  "editor.tabCompletion": "off",
+  "editor.snippetSuggestions": "none",
+  "html.autoClosingTags": false,
+  "html.suggest.html5": false,
+  "emmet.showExpandedAbbreviation": "never",
+
+  "github.copilot.enable": false,
+  "github.copilot.editor.enableAutoCompletions": false,
+
+  "geminicodeassist.inlineSuggestions.enableAuto": false
+}
