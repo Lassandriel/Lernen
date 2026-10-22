@@ -18,4 +18,4 @@ The website built in this repository is deployed and live via GitHub Pages:
 * **HTML:** Multi-page semantic structure (`index.html`, `about-me.html`, `shortcuts.html`)
 * **CSS:** Clean responsive layout using Flexbox, component styling, and sticky footer (`style.css`)
 * **JavaScript:** Dynamic navigation bar generation and automated footer (`script.js`)
-* **Datenbanken** First try at databases; I hate it more than JS
+* **Datenbanken** First try at databases; I hate it more than JS lol
