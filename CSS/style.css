@@ -109,6 +109,12 @@ input {
     gap: 20px;
 }
 
+#tagebuch-eintraege {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
 /* =========================================
    4. FOOTER (Ganz unten)
    ========================================= */
