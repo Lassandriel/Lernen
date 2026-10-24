@@ -62,3 +62,32 @@ if (tagebuchContainer) {
   }
 }
 
+const eintragBtn = document.getElementById("eintrag-btn");
+if (eintragBtn) {
+  eintragBtn.addEventListener ("click", eintragSpeichern);
+}
+
+function eintragSpeichern() {
+  const titel = document.getElementById("titel-input").value;
+  const text =document.getElementById("text-input").value;
+  const datum = "Heute";
+  if (titel === "") {
+        alert("Bitte gib einen Titel ein!")
+      } else {
+        if (text === "") {
+          alert("Bitte gib einen Text ein!")
+        } else {
+          tagebuchContainer.innerHTML += `
+      <article class="karte tagebuch-eintrag">
+        <span class="datum">${datum}</span>
+        <h3>${titel}</h3>
+        <p>${text}</p>
+      </article>
+    `;
+      document.getElementById("titel-input").value = "";
+      document.getElementById("text-input").value = "";
+        }
+      }
+
+    }
+  
