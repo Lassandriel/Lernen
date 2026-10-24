@@ -16,7 +16,10 @@
       }
 
     }
-
+const begruessenBtn = document.getElementById("begruessen-btn")
+if (begruessenBtn) {
+  begruessenBtn.addEventListener("click", begruessen);
+}
     const seiten = [      
       {name: "Startseite", url: "index.html"},
       {name: "Über mich", url: "about-me.html"},
