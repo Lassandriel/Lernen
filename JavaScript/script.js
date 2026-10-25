@@ -107,3 +107,18 @@ if (toggleBtn) {
 function toggle() {
   document.body.classList.toggle("dark");
 }
+
+// -------------------------------------------------------------------  
+// Wetter fetch
+// -------------------------------------------------------------------
+
+async function ladeWetter() {
+  const antwort =  await fetch("https://api.open-meteo.com/v1/forecast?latitude=52.52&longitude=13.41&current=temperature_2m")
+  const daten = await antwort.json();
+  console.log(daten);
+  const anzeige = document.getElementById("wetter-anzeige");
+if (anzeige) {
+  anzeige.textContent = `Aktuell: ${daten.current.temperature_2m} °C`;
+}
+}
+ladeWetter();
