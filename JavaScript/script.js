@@ -25,17 +25,24 @@ if (begruessenBtn) {
       {name: "Über mich", url: "about-me.html"},
       {name: "Shortcuts", url: "shortcuts.html"},
       { name: "Tagebuch", url: "diary.html" },
+    
     ];
     
     const navContainer = document.getElementById("nav-links")
     for (const seite of seiten){
-      navContainer.innerHTML += `<a href="${seite.url}">${seite.name}</a>`
-    }
+      navContainer.innerHTML += `<a href="${seite.url}">${seite.name}</a>
+      `
+      } 
+      navContainer.innerHTML += `<button id="theme-toggle">🌙</button>`
 
     const footer = document.getElementById("fusszeile")
       const jahr = new Date().getFullYear();
     footer.innerHTML = `<p>Lassandriel - Hobby-Developer und Liebhaber von Flügeln! &copy; ${jahr}</p>`;
     
+// -------------------------------------------------------------------  
+// Tagebuch Einträger hier rein!
+// -------------------------------------------------------------------
+
 const tagebuchContainer = document.getElementById("tagebuch-eintraege");
 const eintraege = [
   {
@@ -49,7 +56,7 @@ const eintraege = [
     text: "HTML und JS komplett getrennt mit addEventListener. Tagebucheinträge werden jetzt dynamisch generiert!"
   }
 ];
-
+// -------------------------------------------------------------------
 if (tagebuchContainer) {
   for (const eintrag of eintraege) {
     tagebuchContainer.innerHTML += `
@@ -90,4 +97,13 @@ function eintragSpeichern() {
       }
 
     }
-  
+// -------------------------------------------------------------------  
+// Theme Toggle
+// -------------------------------------------------------------------
+const toggleBtn = document.getElementById("theme-toggle");
+if (toggleBtn) {
+  toggleBtn.addEventListener("click", toggle);
+}
+function toggle() {
+  document.body.classList.toggle("dark");
+}

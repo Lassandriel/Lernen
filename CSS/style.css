@@ -132,3 +132,24 @@ footer {
 .zentriert {
     text-align: center;
 }
+
+/* =========================================
+   6. DARK MODE
+   ========================================= */
+
+body.dark {
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+}
+
+body.dark .karte {
+    background-color: #2d2d2d;
+}
+
+body.dark button {
+    background-color: #3d1414;
+}
+
+body.dark kbd {
+    color: black;
+}
