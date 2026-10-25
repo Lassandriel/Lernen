@@ -54,7 +54,12 @@ const eintraege = [
     datum: "24. Oktober 2026",
     titel: "Meilenstein: Saubere Events & Daten",
     text: "HTML und JS komplett getrennt mit addEventListener. Tagebucheinträge werden jetzt dynamisch generiert!"
-  }
+  },
+  {
+    datum: "25. Oktober 2026",
+    titel: "Dark Mode, Live-Wetter & Einstieg in Python",
+    text: "Heute habe ich einen universellen Dark Mode mit classList.toggle gebaut und echte Wetterdaten über eine API mit fetch geladen. Danach ging es direkt mit Python los: print, input, if/else und Schleifen ohne geschweifte Klammern!"
+  },
 ];
 // -------------------------------------------------------------------
 if (tagebuchContainer) {
