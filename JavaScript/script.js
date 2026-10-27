@@ -117,13 +117,17 @@ function toggle() {
 // Wetter fetch
 // -------------------------------------------------------------------
 
+
 async function ladeWetter() {
   const antwort =  await fetch("https://api.open-meteo.com/v1/forecast?latitude=52.52&longitude=13.41&current=temperature_2m")
   const daten = await antwort.json();
   console.log(daten);
   const anzeige = document.getElementById("wetter-anzeige");
+let icon ="☀"
+if (daten.current.temperature_2m < 15) {
+  icon = "❄"}
 if (anzeige) {
-  anzeige.textContent = `Aktuell: ${daten.current.temperature_2m} °C`;
+  anzeige.textContent = `${icon} Aktuell: ${daten.current.temperature_2m} °C`;
 }
 }
 ladeWetter();
